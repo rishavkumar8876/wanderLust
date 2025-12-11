@@ -124,10 +124,12 @@ Server will start on:
 http://localhost:3030
 ```
 
+---
+
 # 🧪 Available Routes
 
 ## Listings
-
+```bash
 Method	Route	Description
 
 GET	/listings	View all listings
@@ -136,17 +138,21 @@ POST	/listings	Create listing
 GET	/listings/:id	View listing details
 PUT	/listings/:id	Update listing
 DELETE	/listings/:id	Delete listing
+```
 
 ## Users
-
+```bash
 Method	Route	Description
 GET	/signup	Signup page
 POST	/signup	Register user
 GET	/login	Login page
 POST	/login	User login
 GET	/logout	Logout user
+```
 
-## 🔒 Authentication Flow
+---
+
+# 🔒 Authentication Flow
 
 ```bash
 Passport.js handles session-based login.
@@ -154,7 +160,9 @@ Only logged-in users can create/edit/delete listings.
 Flash messages show warnings & success alerts.
 ```
 
-## ☁️ Image Upload System
+---
+
+# ☁️ Image Upload System
 ```bash
 Multer handles image file uploads.
 
